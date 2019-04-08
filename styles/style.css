@@ -1,0 +1,70 @@
+﻿/*
+Hunter Harris
+January 23, 2019
+INFO 2220
+Jon Holmes
+Assignment 2
+Purpose: This is a CSS external styling sheet for styling other pages
+*/
+@import url("morestyle.css");
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
+}
+p {
+    /*padding: 2ex;*/
+}
+/*#csstestBody is ID placed on the body element in csstest.html*/
+#csstestBody span {
+    font-weight: bold;
+}
+table span {
+    text-decoration: underline;
+}
+a {
+    color: #F80;
+}
+h1 {
+    font-size: 2em;
+    color: #F80;
+}
+h2 {
+    font-size: 1.8em;
+    color: #888;
+}
+h3 {
+    font-size: 1.6em;
+}
+th {
+    background-color: #F80;
+    color: #FFF;
+}
+tr {
+    font-size: 0.9em;
+    background-color: #EEE;
+}
+/*.other class placed on even tr rows*/
+.other {
+    background-color: #DDD;
+}
+.warning, .success, .error {
+    border: 1px solid #AAA;
+    font-weight: bold;
+    padding: 0.3em;
+    margin: 0.3em;
+}
+.success {
+    color: #080;
+    background-color: #F0FFF0;
+    border-color: #080;
+}
+.warning {
+    color: #880;
+    background-color: #FFFFF0;
+    border-color: #880;
+}
+.error {
+    color: #800;
+    background-color: #FFF0F0;
+    border-color: #800;
+}

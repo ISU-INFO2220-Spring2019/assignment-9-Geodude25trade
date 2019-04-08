@@ -1,0 +1,78 @@
+﻿<!--
+Hunter Harris
+January 21, 2019
+INFO 2220
+Jon Holmes
+Assignment 1 – Part III
+Purpose: This is an html page for practicing forms. It sends data to a server using POST.
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>INFO 2220 Assignments</title>
+    <!--<script type="text/javascript" src=""></script>-->
+    <!--<link rel="stylesheet" href="styles/style.css" />-->
+    <link rel="shortcut icon" href="favicon.ico" />
+</head>
+
+<body>
+    <!--Form that uses the POST method to send data to Professor Holmes' website where it is then displpayed-->
+    <form action="http://teaching.jdholmes.net/postvget/reader/index.php" method="post">
+        <!--Typing inputs-->
+        <input type="hidden" id="studentId" name="StudentID" value="907476" />
+        <label for="txtFirstName">First Name:</label>
+        <input type="text" id="txtFirstName" name="firstName" />
+        <label for="txtLastName">Last Name:</label>
+        <input type="text" id="txtLastName" name="lastName" />
+        <label for="txtSecretKey">Secret Key:</label>
+        <input type="password" id="txtSecretKey" name="secret" />
+        <label for="ddlFavColor">Favorite Color:</label>
+        <!--Drop-down-list input with color options-->
+        <select id="ddlFavColor" name="favColor">
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="red" selected="selected">Red</option>
+            <option value="purple">Purple</option>
+        </select>
+        <!--Group of radio buttons for choosing the day of the week-->
+        <fieldset>
+            <legend>Day of the Week</legend>
+            <input type="radio" id="rbSunday" name="dayOfWeek" value="Sunday" />
+            <label for="rbSunday">Sunday</label>
+            <input type="radio" id="rbMonday" name="dayOfWeek" value="Monday" />
+            <label for="rbMonday">Monday</label>
+            <input type="radio" id="rbTuesday" name="dayOfWeek" value="Tuesday" />
+            <label for="rbTuesday">Tuesday</label>
+            <input type="radio" id="rbWednesday" name="dayOfWeek" value="Wednesday" />
+            <label for="rbWednesday">Wednesday</label>
+            <input type="radio" id="rbThurday" name="dayOfWeek" value="Thursday" />
+            <label for="rbThurday">Thursday</label>
+            <input type="radio" id="rbFriday" name="dayOfWeek" value="Friday" checked/>
+            <label for="rbFriday">Friday</label>
+            <input type="radio" id="rbSaturday" name="dayOfWeek" value="Saturday" />
+            <label for="rbSaturday">Saturday</label>
+        </fieldset>
+        <!--Group of checkboxes for choosing applicable times-->
+        <fieldset>
+            <legend>Times</legend>
+            <input type="checkbox" id="chk11AM" name="timeOfDay" value="11" />
+            <label for="chk11AM">11:00 AM</label>
+            <input type="checkbox" id="chk12AM" name="timeOfDay" value="12" />
+            <label for="chk12AM">12:00 AM</label>
+            <input type="checkbox" id="chk1PM" name="timeOfDay" value="13" />
+            <label for="chk1PM">1:00 PM</label>
+            <input type="checkbox" id="chk2PM" name="timeOfDay" value="14" />
+            <label for="chk2PM">2:00 PM</label>
+            <input type="checkbox" id="chk3PM" name="timeOfDay" value="15" />
+            <label for="chk3PM">3:00 PM</label>
+        </fieldset>
+        <!--Text Area-->
+        <label for="taDescription">Description:</label>
+        <textarea id="taDescription" name="description"></textarea>
+        <!--Submit button for sending to the server-->
+        <input type="submit" value="Send to Server" />
+    </form>
+</body>
+
+</html>

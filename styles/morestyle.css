@@ -1,0 +1,30 @@
+﻿/*
+Hunter Harris
+January 23, 2019
+INFO 2220
+Jon Holmes
+Assignment 2
+Purpose: This is a CSS external styling sheet to be imported into another styling sheet for styling other pages
+*/
+a:hover {
+    color: #888;
+}
+td:hover {
+    background-color: #000;
+    color: #FFF;
+    cursor: cell;
+}
+.warning::before, .success::before, .error::before {
+    content: "Message: ";
+}
+.special {
+    font-weight: normal;
+    text-transform: uppercase;
+    text-decoration: overline;
+}
+.special::before {
+    content: open-quote;
+}
+.special::after {
+    content: close-quote;
+}
