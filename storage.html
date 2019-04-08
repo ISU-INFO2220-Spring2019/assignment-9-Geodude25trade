@@ -2,9 +2,39 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Local Storage Input</title>
+    <link href="styles/style.css" rel="stylesheet" />
+    <link href="styles/ajax.css" rel="stylesheet" />
 </head>
 <body>
-
+    <a href="index.html">Back to assignments...</a>
+    <form>
+        <label for="txtUserName">Username</label>
+        <input id="txtUserName" type="text" name="txtUserName" value="" />
+        <label for="txtPassword">Password</label>
+        <input id="txtPassword" type="password" name="txtPassword" value="" />
+        <input id="chkRemember" type="checkbox" name="chkRemember" value="true" />
+        <label for="chkRemember">Remember Me</label>
+        <button>Login</button>
+        <button>Forget Me</button>
+    </form>
+    <form>
+        <label for="txtName">Name</label>
+        <input id="txtName" type="text" name="txtName" value="" />
+        <label for="txtPhone">Phone</label>
+        <input id="txtPhone" type="text" name="txtPhone" value="" />
+        <label for="nmbAge">Age</label>
+        <input id="nmbAge" type="number" name="nmbAge" value="" />
+        <fieldset>
+            <legend>Group</legend>
+            <input id="rbOne" type="radio" name="group" value="" />
+            <label for="rbOne">Group 1</label>
+            <input id="rbTwo" type="radio" name="group" value="" />
+            <label for="rbTwo">Group 2</label>
+            <input id="rbThree" type="radio" name="group" value="" />
+            <label for="rbThree">Group 3</label>
+        </fieldset>
+    </form>
+    <a href="viewstorage.html">View Storage</a>
 </body>
 </html>
