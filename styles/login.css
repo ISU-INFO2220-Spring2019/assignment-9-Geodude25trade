@@ -1,0 +1,71 @@
+﻿/*
+Hunter Harris
+April 9, 2019
+INFO 2220
+Jon Holmes
+Assignment 9
+Purpose: This is a CSS external styling sheet for styling elements used in manipulating local storage
+*/
+#login {
+    width: 205px;
+    height: 150px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    margin: 50px 25px;
+    padding: 25px;
+    background-color: hsl(198, 100%, 74%);
+}
+
+#addUser {
+    width: 300px;
+    height: 275px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    margin: 50px 25px;
+    padding: 25px;
+    background-color: hsl(198, 100%, 74%);
+}
+
+#btnLogin, #btnForget, .btnAdd, #btnClear, .btnSave {
+    display: inline-block;
+    margin: 15px 5px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 2px outset hsl(120, 77%, 43%);
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b4e391+0,61c419+50,47a500+100 */
+    background: hsl(120, 59%, 73%); /* Old browsers */
+    background: -moz-linear-gradient(top, hsl(120, 59%, 73%) 0%, hsl(120, 77%, 43%) 50%, hsl(120, 100%, 32%) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, hsl(120, 59%, 73%) 0%,hsl(120, 77%, 43%) 50%,hsl(120, 100%, 32%) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, hsl(120, 59%, 73%) 0%,hsl(120, 77%, 43%) 50%,hsl(120, 100%, 32%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#47a500',GradientType=0 ); /* IE6-9 */
+}
+
+    #btnLogin:hover, #btnForget:hover, .btnAdd:hover, #btnClear:hover, .btnSave:hover {
+        border: 2px outset hsl(120, 77%, 43%);
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a1d678+0,58a91f+50,428f07+100 */
+        background: hsl(120, 53%, 65%); /* Old browsers */
+        background: -moz-linear-gradient(top, hsl(120, 53%, 65%) 0%, hsl(120, 69%, 39%) 50%, hsl(120, 91%, 29%) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, hsl(120, 53%, 65%) 0%,hsl(120, 69%, 39%) 50%,hsl(120, 91%, 29%) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, hsl(120, 53%, 65%) 0%,hsl(120, 69%, 39%) 50%,hsl(120, 91%, 29%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1d678', endColorstr='#428f07',GradientType=0 ); /* IE6-9 */
+    }
+
+    #btnLogin:active, #btnForget:active, .btnAdd:active, #btnClear:active, .btnSave:active {
+        border: 2px inset hsl(120, 77%, 43%);
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#428f07+0,58a91f+50,a1d678+100 */
+        background: hsl(120, 91%, 29%); /* Old browsers */
+        background: -moz-linear-gradient(top, hsl(120, 91%, 29%) 0%, hsl(120, 69%, 39%) 50%, hsl(120, 53%, 65%) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, hsl(120, 91%, 29%) 0%,hsl(120, 69%, 39%) 50%,hsl(120, 53%, 65%) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, hsl(120, 91%, 29%) 0%,hsl(120, 69%, 39%) 50%,hsl(120, 53%, 65%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#428f07', endColorstr='#a1d678',GradientType=0 ); /* IE6-9 */
+    }
+
+input[type="text"], input[type="password"], input[type="number"] {
+    display: block;
+}
+
+#groupList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

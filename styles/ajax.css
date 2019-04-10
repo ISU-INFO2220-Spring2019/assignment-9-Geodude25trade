@@ -1,4 +1,13 @@
-﻿#homeLink {
+﻿/*
+Hunter Harris
+March 31, 2019
+INFO 2220
+Jon Holmes
+Assignment 8
+Purpose: This is a CSS external styling sheet for styling search results from ajax calls
+*/
+@import url("login.css");
+#homeLink {
     display: block;
     margin: 5px 5px 15px 0px;
 }
@@ -47,14 +56,6 @@
     margin: 0;
 }
 
-/*
-Hunter Harris
-March 31, 2019
-INFO 2220
-Jon Holmes
-Assignment 8
-Purpose: This is a CSS external styling sheet for styling search results from ajax calls
-*/
 .cntctPhone {
     font: bold 14px Courier, sans-serif;
     text-align: center;
@@ -92,4 +93,12 @@ Purpose: This is a CSS external styling sheet for styling search results from aj
 .cntctList {
     list-style: none;
     margin: 5px;
+}
+
+.btnEdit {
+    position: relative;
+    top: 1px;
+    width: 60px;
+    height: 30px;
+    border-radius: 0 0 0 15px;
 }

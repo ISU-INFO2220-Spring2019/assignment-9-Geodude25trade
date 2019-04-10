@@ -1,24 +1,34 @@
-﻿<!DOCTYPE html>
+﻿<!--
+Hunter Harris
+April 9, 2019
+INFO 2220
+Jon Holmes
+Assignment 9
+Purpose: This is an HTML page used for adding people to local storage, editing them, and remembering login information
+-->
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <title>Local Storage Input</title>
     <link href="styles/style.css" rel="stylesheet" />
     <link href="styles/ajax.css" rel="stylesheet" />
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/storage.js"></script>
 </head>
-<body>
+<body id="main">
     <a href="index.html">Back to assignments...</a>
-    <form>
+    <form id="login">
         <label for="txtUserName">Username</label>
         <input id="txtUserName" type="text" name="txtUserName" value="" />
         <label for="txtPassword">Password</label>
         <input id="txtPassword" type="password" name="txtPassword" value="" />
-        <input id="chkRemember" type="checkbox" name="chkRemember" value="true" />
+        <input id="chkRemember" type="checkbox" name="chkRemember" value="" />
         <label for="chkRemember">Remember Me</label>
-        <button>Login</button>
-        <button>Forget Me</button>
+        <button id="btnLogin" type="button">Login</button>
+        <button id="btnForget" type="button">Forget Me</button>
     </form>
-    <form>
+    <form id="addUser">
         <label for="txtName">Name</label>
         <input id="txtName" type="text" name="txtName" value="" />
         <label for="txtPhone">Phone</label>
@@ -27,14 +37,25 @@
         <input id="nmbAge" type="number" name="nmbAge" value="" />
         <fieldset>
             <legend>Group</legend>
-            <input id="rbOne" type="radio" name="group" value="" />
-            <label for="rbOne">Group 1</label>
-            <input id="rbTwo" type="radio" name="group" value="" />
-            <label for="rbTwo">Group 2</label>
-            <input id="rbThree" type="radio" name="group" value="" />
-            <label for="rbThree">Group 3</label>
+            <ul id="groupList">
+                <li>
+                    <input id="rbOne" type="radio" name="group" value="1" />
+                    <label for="rbOne">Group 1</label>
+                </li>
+                <li>
+                    <input id="rbTwo" type="radio" name="group" value="2" />
+                    <label for="rbTwo">Group 2</label>
+                </li>
+                <li>
+                    <input id="rbThree" type="radio" name="group" value="3" />
+                    <label for="rbThree">Group 3</label>
+                </li>
+            </ul>
         </fieldset>
+        <button class="btnAdd" type="button">Add Person</button>
+        <button id="btnClear" type="button">Clear Storage</button>
     </form>
+    <ul id="peopleInStorage"></ul>
     <a href="viewstorage.html">View Storage</a>
 </body>
 </html>
